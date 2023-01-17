@@ -1,4 +1,4 @@
-# caps
+# caps 🧢
 
 A smart converter to convert all types of words or letters to capital letters.
 
