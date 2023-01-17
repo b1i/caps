@@ -1,9 +1,11 @@
-function caps(string, words) {
-  const list = words.split(",")
-  for (let i = 0; i < list.length; i++) {
-    string = string.replaceAll(list[i], list[i].toUpperCase())
+function caps(str, wordsToUppercase) {
+  wordsToUppercase = wordsToUppercase.split(",")
+  for (let i = 0; i < wordsToUppercase.length; i++) {
+    let word = wordsToUppercase[i].trim()
+    let regex = new RegExp("\\b" + word + "\\b", "gi")
+    str = str.replace(regex, word.toUpperCase())
   }
-
-  return string
+  return str
 }
-module.exports = caps
+
+
