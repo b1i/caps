@@ -11,10 +11,8 @@ npm i caps
 ```
 
 [caps]: https://www.npmjs.com/package/caps
-### Handling URL
+### Example:
 
-
-Example:
 ```rust
 const caps = require('caps')
 const someThing = document.querySelector(".someThing")
