@@ -1,6 +1,6 @@
-# caps 🧢
+# caps
 
-A smart converter to convert all types of words or letters to capital letters.
+Convert all types of words and letters to capital letters.
 
 ### Basic setup
 
@@ -14,11 +14,11 @@ npm i caps
 ### Example:
 
 ```rust
-const caps = require('caps')
-const someThing = document.querySelector(".someThing")
 
-var tx = someThing.innerText
-  
-someThing.innerText = caps(tx, "some, thing")
+const caps = require('caps');
+
+let inputString = "the quick brown fox jumps over the lazy dog";
+let wordsToUppercase = "quick, brown, over";
+console.log(caps(inputString, wordsToUppercase));
 
 ```
